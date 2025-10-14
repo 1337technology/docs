@@ -1,0 +1,274 @@
+---
+title: "How-to Guide"
+description: "Step-by-step usage instructions and best practices"
+---
+
+# How-to Guide
+
+Comprehensive step-by-step instructions for getting the most out of our platform. This guide covers essential tasks for both sales teams and IT administrators.
+
+## Quick Start
+
+<CardGroup cols={2}>
+  <Card
+    title="For Sales Teams"
+    icon="handshake"
+    href="#sales-team-guide"
+  >
+    Lead management, pipeline tracking, and reporting
+  </Card>
+  <Card
+    title="For IT Administrators"
+    icon="gear"
+    href="#it-admin-guide"
+  >
+    User management, security settings, and integrations
+  </Card>
+</CardGroup>
+
+## Sales Team Guide
+
+### Getting Started with Lead Management
+
+<Steps>
+  <Step title="Access Your Dashboard">
+    Log in to your account and navigate to the sales dashboard. You'll see your pipeline overview and recent activity.
+  </Step>
+  <Step title="Import Your Contacts">
+    Click "Import Contacts" and upload your CSV file or connect your email/CRM system for automatic sync.
+  </Step>
+  <Step title="Set Up Your Pipeline">
+    Customize your sales stages to match your process (Lead → Qualified → Proposal → Closed).
+  </Step>
+</Steps>
+
+### Managing Prospects and Deals
+
+**Adding New Leads**
+1. Click the "+" button in the top navigation
+2. Enter prospect information (name, company, email, phone)
+3. Assign lead source and initial priority score
+4. Set follow-up reminder date
+
+**Moving Deals Through Pipeline**
+- **Drag and drop**: Simply drag deal cards between pipeline stages
+- **Bulk actions**: Select multiple deals and move them simultaneously
+- **Automated triggers**: Set up rules to move deals based on activities
+
+<Tip>
+Use the lead scoring feature to prioritize your follow-ups. Leads with scores above 75 typically convert 3x faster.
+</Tip>
+
+### Creating and Managing Activities
+
+**Scheduling Meetings**
+1. Open any prospect's profile
+2. Click "Schedule Meeting"
+3. Select available time slots (calendar integration required)
+4. Add meeting agenda and location/video link
+5. Send calendar invitation automatically
+
+**Logging Calls and Emails**
+- **Manual entry**: Click "Log Activity" and select call/email type
+- **Automatic logging**: Enable email integration for automatic tracking
+- **Voice notes**: Use mobile app to record voice memos during calls
+
+### Generating Reports
+
+<Accordion title="Sales Performance Reports">
+**Monthly Sales Report**
+1. Navigate to Reports → Sales Performance
+2. Select date range (current month default)
+3. Choose metrics: deals closed, revenue, conversion rates
+4. Export as PDF for management presentation
+
+**Individual Performance**
+- Access under Reports → Individual Metrics
+- Compare your performance to team averages
+- Track progress toward monthly and quarterly goals
+</Accordion>
+
+<Accordion title="Pipeline Analysis">
+**Deal Velocity Report**
+1. Go to Reports → Pipeline Analysis
+2. View average time in each sales stage
+3. Identify bottlenecks in your sales process
+4. Export data for process improvement discussions
+
+**Forecast Accuracy**
+- Review predicted vs. actual close dates
+- Adjust future forecasting based on historical patterns
+</Accordion>
+
+## IT Admin Guide
+
+### User Management
+
+**Adding New Users**
+<Steps>
+  <Step title="Access Admin Panel">
+    Navigate to Settings → User Management (admin privileges required)
+  </Step>
+  <Step title="Create User Account">
+    Click "Add User" and enter: name, email, role (Sales Rep/Manager/Admin)
+  </Step>
+  <Step title="Set Permissions">
+    Configure access levels: read-only, standard, or full access to different modules
+  </Step>
+  <Step title="Send Invitation">
+    System automatically sends login credentials and setup instructions
+  </Step>
+</Steps>
+
+**Managing User Roles**
+- **Sales Rep**: Lead/deal management, basic reporting
+- **Sales Manager**: Team oversight, advanced reporting, goal setting
+- **IT Admin**: System configuration, user management, integrations
+- **View-Only**: Reports and dashboard access only
+
+### Security Configuration
+
+**Single Sign-On (SSO) Setup**
+1. Navigate to Settings → Security → SSO
+2. Select your identity provider (Azure AD, Google Workspace, Okta)
+3. Configure SAML settings using provided documentation
+4. Test connection with test user account
+5. Enable SSO for all users
+
+**Password Policies**
+- Minimum length: 8 characters
+- Require special characters and numbers
+- Force password changes every 90 days
+- Enable two-factor authentication (recommended)
+
+<Warning>
+Always test SSO configuration with a test account before deploying to all users. Have a backup admin account that doesn't use SSO.
+</Warning>
+
+### Data Management and Backup
+
+**Automated Backups**
+- Daily backups occur automatically at 2 AM EST
+- Retention period: 90 days for standard accounts, 1 year for enterprise
+- Manual backup available under Settings → Data Management
+
+**Data Export Options**
+1. **Full Export**: All customer data, deals, and activities
+2. **Selective Export**: Choose specific date ranges or data types
+3. **API Access**: For custom integrations and automated exports
+
+**Data Import Guidelines**
+- Supported formats: CSV, Excel (.xlsx), vCard
+- Maximum file size: 50MB per import
+- Required fields: Email address (for contacts), Deal name (for opportunities)
+- Duplicate detection automatically merges similar records
+
+### System Monitoring
+
+**Performance Dashboard**
+Access real-time system metrics:
+- **User Activity**: Active sessions, login patterns
+- **System Performance**: Response times, uptime statistics
+- **Storage Usage**: Data consumption and remaining capacity
+- **API Usage**: Integration call volumes and rate limits
+
+**Alert Configuration**
+Set up notifications for:
+- System downtime or performance issues
+- Failed integration sync attempts
+- High user error rates
+- Storage capacity warnings
+
+## Best Practices
+
+### For Sales Teams
+
+**Daily Workflow Recommendations**
+1. **Morning**: Review overnight leads and priority follow-ups
+2. **Mid-day**: Update deal stages and log completed activities
+3. **Evening**: Schedule next day's meetings and set follow-up reminders
+
+**Data Quality Tips**
+- Always include phone numbers for leads
+- Use consistent company name formatting
+- Add notes after every customer interaction
+- Update deal probability estimates weekly
+
+### For IT Administrators
+
+**Regular Maintenance Tasks**
+- **Weekly**: Review user access and disable inactive accounts
+- **Monthly**: Check integration status and error logs
+- **Quarterly**: Review security settings and update passwords
+
+**Performance Optimization**
+- Enable browser caching for frequently accessed pages
+- Monitor API rate limits to prevent integration failures
+- Regular database cleanup of old activity logs
+
+## Troubleshooting
+
+### Common Issues
+
+<Accordion title="Login Problems">
+**Can't log in / Forgot password**
+1. Use "Forgot Password" link on login page
+2. Check spam folder for reset email
+3. Contact admin if SSO issues persist
+4. Ensure browser cookies are enabled
+
+**Two-factor authentication issues**
+- Verify time settings on mobile device
+- Generate new backup codes if needed
+- Contact IT admin for temporary bypass
+</Accordion>
+
+<Accordion title="Data Sync Issues">
+**Contacts not syncing from CRM**
+1. Check integration status in Settings → Integrations
+2. Verify API credentials haven't expired
+3. Review field mapping configuration
+4. Check for duplicate prevention rules
+
+**Missing email activity**
+- Confirm email integration is properly configured
+- Check email forwarding settings
+- Verify sender domain isn't blocked
+</Accordion>
+
+<Accordion title="Performance Issues">
+**Slow page loading**
+- Clear browser cache and cookies
+- Disable browser extensions temporarily
+- Check internet connection speed
+- Try accessing from different browser
+
+**Mobile app problems**
+- Update to latest app version
+- Clear app cache and restart
+- Check mobile data/WiFi connection
+- Reinstall app if issues persist
+</Accordion>
+
+## Getting Help
+
+### Support Channels
+
+**For Sales Teams**
+- **Email**: sales-support@yourcompany.com
+- **Phone**: 1-800-XXX-XXXX (business hours)
+- **Response Time**: 4-6 hours for standard issues
+
+**For IT Administrators**
+- **Email**: tech-support@yourcompany.com
+- **Priority Support**: Available for enterprise accounts
+- **Response Time**: 1-2 hours for critical issues
+
+**Self-Service Resources**
+- Video tutorial library (20+ how-to videos)
+- Downloadable user guides and quick reference cards
+- Community forum for user discussions and tips
+
+<Info>
+For urgent issues affecting multiple users or system-wide problems, call our emergency support line at 1-800-XXX-XXXX and press 1 for immediate assistance.
+</Info>
