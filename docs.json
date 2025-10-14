@@ -20,19 +20,23 @@
             ]
           },
           {
-            "group": "Documentation",
+            "group": "How-to Guides",
             "pages": [
-              "how-to-guide",
-              "product-updates"
+              "how-to-guide"
             ]
           },
           {
             "group": "Integrations",
             "pages": [
-              "integrations/index",
               "integrations/hubspot",
               "integrations/zoho",
               "integrations/pipedrive"
+            ]
+          },
+          {
+            "group": "Product Updates",
+            "pages": [
+              "product-updates"
             ]
           }
         ]

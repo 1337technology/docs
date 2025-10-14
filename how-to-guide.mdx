@@ -163,6 +163,60 @@ Always test SSO configuration with a test account before deploying to all users.
 - Required fields: Email address (for contacts), Deal name (for opportunities)
 - Duplicate detection automatically merges similar records
 
+### Integration Setup
+
+**Supported Integration Types**
+
+<CardGroup cols={2}>
+  <Card
+    title="CRM Integration"
+    icon="handshake"
+  >
+    Connect with popular CRM systems like Salesforce, HubSpot, and Pipedrive.
+  </Card>
+  <Card
+    title="Email Platforms"
+    icon="envelope"
+  >
+    Integrate with email marketing tools and automation platforms.
+  </Card>
+</CardGroup>
+
+**General Integration Prerequisites**
+- Admin access to your external system
+- API credentials from your service provider
+- Network access to our integration endpoints
+
+**Standard Setup Process**
+
+<Steps>
+  <Step title="Generate API Keys">
+    Log into your external system's admin panel, navigate to API settings, and generate new integration credentials
+  </Step>
+  <Step title="Configure Connection">
+    Access our integration dashboard, enter your credentials, and test the connection
+  </Step>
+  <Step title="Map Data Fields">
+    Define which fields sync between systems, set up automated sync schedules, and configure conflict resolution rules
+  </Step>
+</Steps>
+
+<Warning>
+Always test integrations in a staging environment before deploying to production.
+</Warning>
+
+**Technical Requirements**
+- **Bandwidth**: Minimum 10 Mbps for real-time sync
+- **Security**: SSL/TLS encryption required
+- **Authentication**: OAuth 2.0 or API key authentication
+- **Rate Limits**: Respect API rate limits (detailed in each integration guide)
+
+**Network Configuration**
+If your organization uses firewalls, ensure these endpoints are whitelisted:
+- `api.yourservice.com`
+- `webhooks.yourservice.com`
+- `sync.yourservice.com`
+
 ### System Monitoring
 
 **Performance Dashboard**
@@ -248,6 +302,23 @@ Set up notifications for:
 - Clear app cache and restart
 - Check mobile data/WiFi connection
 - Reinstall app if issues persist
+</Accordion>
+
+<Accordion title="Integration Issues">
+**Authentication Failures**
+- Verify API credentials haven't expired
+- Check if API permissions are sufficient
+- Ensure integration user account is active
+
+**Sync Delays**
+- Check API rate limits
+- Verify network connectivity
+- Review sync frequency settings
+
+**Data Mapping Errors**
+- Review field mapping configuration
+- Check data format compatibility
+- Verify required field constraints
 </Accordion>
 
 ## Getting Help
