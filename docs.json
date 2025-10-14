@@ -34,7 +34,7 @@
       "anchors": [
         {
           "anchor": "Contact Support",
-          "href": "mailto:support@yourcompany.com",
+          "href": "mailto:support@askforsara.com",
           "icon": "envelope"
         }
       ]
@@ -48,7 +48,7 @@
     "links": [
       {
         "label": "Contact Us",
-        "href": "mailto:support@yourcompany.com"
+        "href": "mailto:support@askforsara.com"
       }
     ]
   },
