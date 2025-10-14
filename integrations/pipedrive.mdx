@@ -1,0 +1,87 @@
+---
+title: "Pipedrive Integration"
+description: "Connect and configure Pipedrive CRM with your system"
+---
+
+# Pipedrive Integration
+
+Set up Pipedrive CRM integration to synchronize your sales pipeline and contact data.
+
+## Prerequisites
+
+- Pipedrive account with admin privileges
+- API token from Pipedrive
+- Understanding of your sales pipeline structure
+
+## Setup Process
+
+### Step 1: Get API Token
+
+1. Log into your Pipedrive account
+2. Go to **Settings** > **API**
+3. Copy your personal API token
+4. Keep this token secure
+
+### Step 2: Configure Integration
+
+1. Add your Pipedrive API token to the integration settings
+2. Select which pipelines to sync
+3. Configure field mappings
+
+### Step 3: Pipeline Mapping
+
+Standard pipeline stages that sync:
+- Lead
+- Qualified
+- Proposal
+- Negotiation
+- Closed Won
+- Closed Lost
+
+### Step 4: Data Synchronization
+
+Configure what data to sync:
+- **Contacts**: Names, emails, phone numbers, companies
+- **Deals**: Deal values, stages, expected close dates
+- **Activities**: Calls, emails, meetings, tasks
+- **Notes**: Deal notes and contact interactions
+
+## Advanced Configuration
+
+### Custom Fields
+
+Map custom fields between systems:
+1. Identify required custom fields in Pipedrive
+2. Create corresponding fields in your system
+3. Set up field mapping rules
+
+### Webhooks
+
+Enable real-time sync with webhooks:
+- Deal stage changes
+- New contact creation
+- Activity updates
+
+## Troubleshooting
+
+<Accordion title="API Connection Issues">
+**Problem**: Cannot connect to Pipedrive API
+
+**Solution**:
+- Verify API token is correct and active
+- Check if your account has API access enabled
+- Ensure network connectivity to Pipedrive servers
+</Accordion>
+
+<Accordion title="Missing Data">
+**Problem**: Some data not appearing after sync
+
+**Solution**:
+- Check field mapping configuration
+- Verify data permissions in Pipedrive
+- Review sync logs for errors
+</Accordion>
+
+## Support
+
+Need help with Pipedrive integration? Contact us at support@askforsara.com

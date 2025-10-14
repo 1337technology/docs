@@ -1,0 +1,61 @@
+---
+title: "Zoho Integration"
+description: "Connect and configure Zoho CRM with your system"
+---
+
+# Zoho Integration
+
+Learn how to integrate Zoho CRM with your system for seamless data synchronization.
+
+## Prerequisites
+
+- Zoho CRM account with admin access
+- API credentials from Zoho
+- Integration permissions enabled
+
+## Setup Process
+
+### Step 1: Generate API Credentials
+
+1. Log into your Zoho CRM account
+2. Go to **Setup** > **Developer Space** > **APIs**
+3. Create a new **Server-based Application**
+4. Note down your Client ID and Client Secret
+
+### Step 2: Configure OAuth
+
+1. Set up OAuth authorization
+2. Generate access tokens
+3. Configure refresh token handling
+
+### Step 3: Field Mapping
+
+Map the following standard fields between systems:
+- Contact information (name, email, phone)
+- Company details
+- Deal stages and amounts
+- Custom fields as needed
+
+## Troubleshooting
+
+<Accordion title="Authentication Issues">
+**Problem**: Unable to authenticate with Zoho
+
+**Solution**:
+- Verify your Client ID and Client Secret
+- Check if your IP is whitelisted
+- Ensure OAuth scope permissions are correct
+</Accordion>
+
+<Accordion title="Sync Failures">
+**Problem**: Data not syncing properly
+
+**Solution**:
+- Check API rate limits
+- Verify field mapping configuration
+- Review error logs for specific issues
+</Accordion>
+
+## Support
+
+For Zoho-specific integration issues, contact our support team at support@askforsara.com

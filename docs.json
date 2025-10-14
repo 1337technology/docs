@@ -22,9 +22,17 @@
           {
             "group": "Documentation",
             "pages": [
-              "integrations",
               "how-to-guide",
               "product-updates"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/index",
+              "integrations/hubspot",
+              "integrations/zoho",
+              "integrations/pipedrive"
             ]
           }
         ]
