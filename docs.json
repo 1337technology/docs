@@ -23,8 +23,8 @@
             "group": "Documentation",
             "pages": [
               "integrations",
-              "product-updates",
-              "how-to-guide"
+              "how-to-guide",
+              "product-updates"
             ]
           }
         ]
