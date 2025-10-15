@@ -29,8 +29,8 @@
             "group": "Integrations",
             "pages": [
               "integrations/hubspot",
-              "integrations/zoho",
-              "integrations/pipedrive"
+              "integrations/pipedrive",
+              "integrations/zoho"
             ]
           },
           {
