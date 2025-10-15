@@ -1,93 +1,127 @@
 ---
 title: "Pipedrive"
-description: "Connect and configure Pipedrive CRM with your system"
+description: "Step-by-step guide to connect your Pipedrive CRM with Sara"
 ---
 
-# Pipedrive Integration
+# Connect Pipedrive to Sara
 
-Set up Pipedrive CRM integration to synchronize your sales pipeline and contact data.
+Connecting Pipedrive to Sara allows you to call Sara before or after your meetings to prepare and log information directly in your CRM. Sara is an AI voice assistant that helps you stay organized without manual data entry.
 
-## Prerequisites
+## What You'll Need
 
-- Pipedrive account with admin privileges
-- API token from Pipedrive
-- Understanding of your sales pipeline structure
+Before starting, make sure you have:
+- An active Pipedrive account
+- Access to your Pipedrive account settings
+- An active Sara account
 
-## Setup Process
+The entire setup takes about 2-3 minutes.
 
-### Step 1: Get API Token
+## Step-by-Step Setup
 
-1. Log into your Pipedrive account
-2. Go to **Settings** \> **API**
-3. Copy your personal API token
-4. Keep this token secure
+### Part 1: Getting Your API Key from Pipedrive
 
-### Step 2: Configure Integration
+An API key is like a secure password that allows Sara to connect with your Pipedrive account. Here's how to find it:
 
-1. Add your Pipedrive API token to the integration settings
-2. Select which pipelines to sync
-3. Configure field mappings
+#### 1. Open Pipedrive
 
-### Step 3: Pipeline Mapping
+Go to [pipedrive.com](https://pipedrive.com) and log into your account.
 
-Standard pipeline stages that sync:
+#### 2. Access Your Account Settings
 
-- Lead
-- Qualified
-- Proposal
-- Negotiation
-- Closed Won
-- Closed Lost
+In the top right corner of your Pipedrive screen, click on your **initials** (the circle with your letters in it).
 
-### Step 4: Data Synchronization
+#### 3. Open Personal Preferences
 
-Configure what data to sync:
+From the dropdown menu that appears, click on **Personal preferences**.
 
-- **Contacts**: Names, emails, phone numbers, companies
-- **Deals**: Deal values, stages, expected close dates
-- **Activities**: Calls, emails, meetings, tasks
-- **Notes**: Deal notes and contact interactions
+#### 4. Navigate to API Settings
 
-## Advanced Configuration
+At the top of the Personal preferences page, you'll see several tabs. Click on the **API** tab.
 
-### Custom Fields
+#### 5. Copy Your API Token
 
-Map custom fields between systems:
+You'll see your personal API token displayed on this page. Click the green **Copy** button next to your token to copy it to your clipboard.
 
-1. Identify required custom fields in Pipedrive
-2. Create corresponding fields in your system
-3. Set up field mapping rules
+<Note>
+Keep this API token secure! Don't share it with anyone, as it gives access to your Pipedrive account.
+</Note>
 
-### Webhooks
+### Part 2: Connecting Sara to Pipedrive
 
-Enable real-time sync with webhooks:
+Now that you have your API key, let's connect it to Sara.
 
-- Deal stage changes
-- New contact creation
-- Activity updates
+#### 6. Open Sara
+
+Go to [askforsara.com](https://askforsara.com) and log into your account.
+
+#### 7. Navigate to Integrations
+
+Once logged in, find and click on the **Pipedrive** integration option.
+
+#### 8. Enter Your Company Domain
+
+In the "Company Domain" field, enter just your company name from your Pipedrive URL.
+
+**How to find your company name:**
+- Look at your Pipedrive URL in your browser
+- It will look like: `yourcompany.pipedrive.com`
+- Enter only the `yourcompany` part (without `.pipedrive.com`)
+
+**Example:** If your URL is `acme.pipedrive.com`, enter `acme`
+
+#### 9. Paste Your API Token
+
+In the "API Token" field, paste the API key you copied from Pipedrive in Step 5.
+
+#### 10. Connect Pipedrive
+
+Click the **[CONNECT PIPEDRIVE]** button to finalize the connection.
+
+#### 11. You're All Set!
+
+Your Pipedrive account is now connected to Sara! You can now call Sara before meetings to prepare or after meetings to log information, and everything will be automatically saved in your Pipedrive CRM.
+
+## What Happens Next?
+
+Once connected, you can call Sara to:
+- **Before a meeting:** Ask Sara to brief you on a contact or deal from your Pipedrive
+- **After a meeting:** Tell Sara what happened, and she'll log notes and updates to the right contact or deal
+- **Update deals:** Sara can update deal stages, add notes, and log activities automatically
+- **Save time:** No more manual data entry - just tell Sara what happened and she handles the rest
 
 ## Troubleshooting
 
-<Accordion title="API Connection Issues">
-  **Problem**: Cannot connect to Pipedrive API
+<Accordion title="Connection Failed - Invalid API Token">
+**What this means:** The API token you entered couldn't be verified.
 
-  **Solution**:
-
-  - Verify API token is correct and active
-  - Check if your account has API access enabled
-  - Ensure network connectivity to Pipedrive servers
+**How to fix it:**
+1. Go back to Pipedrive and copy your API token again (Step 5)
+2. Make sure you copied the entire token without any extra spaces
+3. Try pasting it into Sara again
+4. If you recently changed your Pipedrive password, you may need to generate a new API token
 </Accordion>
 
-<Accordion title="Missing Data">
-  **Problem**: Some data not appearing after sync
+<Accordion title="Can't Find My Company Domain">
+**What this means:** You're not sure what to enter in the Company Domain field.
 
-  **Solution**:
-
-  - Check field mapping configuration
-  - Verify data permissions in Pipedrive
-  - Review sync logs for errors
+**How to fix it:**
+1. Open Pipedrive in your browser
+2. Look at the URL at the top of your browser
+3. Your domain is the part before `.pipedrive.com`
+4. For example: If your URL is `salesteam.pipedrive.com`, enter `salesteam`
 </Accordion>
 
-## Support
+<Accordion title="I Don't See the API Tab in Personal Preferences">
+**What this means:** Your Pipedrive account may not have API access enabled.
 
-Need help with Pipedrive integration? Contact us at [support@askforsara.com](mailto:support@askforsara.com)
+**How to fix it:**
+1. Check with your Pipedrive administrator to ensure API access is enabled for your account
+2. Some Pipedrive plans may require specific permissions for API access
+3. Contact Pipedrive support if you need help enabling API access
+</Accordion>
+
+## Need Help?
+
+If you're experiencing issues connecting Pipedrive to Sara, our support team is here to help:
+- Email us at support@askforsara.com
+- We typically respond within 24 hours on business days
